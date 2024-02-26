@@ -1,0 +1,39 @@
+{
+    "main": "main.py",
+    "name": "PasswordDetector",
+    "homepage": "https://github.com/nzbgetcom/Extension-Logger",
+    "kind": "QUEUE/POST-PROCESSING",
+    "displayName": "Password Detector",
+    "version": "3.0.0",
+    "author": "JVM",
+    "license": "GNU",
+    "about": "Detects nzbs with password protected .rar archive.",
+    "queueEvents": "NZB_ADDED, NZB_DOWNLOADED, FILE_DOWNLOADED",
+    "requirements": [
+        "This script requires Python 3.8 and above to be installed on your system."
+    ],
+    "description": [
+        "If a password is detected the download is marked as bad or paused. This status",
+        "informs other scripts about failure and allows NZBGet to choose",
+        "another duplicate for download (if available)."
+    ],
+    "options": [
+        {
+            "name": "PassAction",
+            "displayName": "PassAction",
+            "value": "Pause",
+            "description": [
+                "Action if password found.",
+                "",
+                "Pause allows to define password. Once resumed, password detection skipped to allow NZB to complete.",
+                "Mark bad removes the download from queue and (if option \"DeleteCleanupDisk\" is active) the",
+                "downloaded files are deleted from disk. If duplicate handling is active",
+                "(option \"DupeCheck\") then another duplicate is chosen for download if available.",
+                "The status \"FAILURE/BAD\" is passed to other scripts and informs them about failure."
+            ],
+            "select": ["Pause", "Mark Bad"]
+        }
+    ],
+    "commands": [],
+    "taskTime": ""
+}
