@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 #
 # Queue-script for NZBGet
 #
@@ -23,38 +22,6 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 
-##############################################################################
-### NZBGET QUEUE/POST-PROCESSING SCRIPT                                    ###
-
-# Detects nzbs with password protected .rar archive.
-#
-# If a password is detected the download is marked as bad or paused. This status
-# informs other scripts about failure and allows NZBGet to choose
-# another duplicate for download (if available).
-#
-#
-# PP-Script version: 2.0.
-#
-# NOTE: This script requires Python 3.8+ to be installed on your system.
-#
-##############################################################################
-### OPTIONS                                                                ###
-
-# Action if password found (Pause, MarkBad).
-#
-# Pause allows to define password. Once resumed, password detection skipped to 
-# allow NZB to complete.
-#
-# MarkBad removes the download from queue and (if option "DeleteCleanupDisk" is active) the
-# downloaded files are deleted from disk. If duplicate handling is active
-# (option "DupeCheck") then another duplicate is chosen for download
-# if available. The status "FAILURE/BAD" is passed to other scripts and informs them
-# about failure.
-#
-#PassAction=Pause
-
-### NZBGET QUEUE/POST-PROCESSING SCRIPT                                    ###
-##############################################################################
 
 import os
 import sys
