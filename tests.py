@@ -24,6 +24,7 @@ import os
 import subprocess
 import unittest
 import shutil
+import json
 
 POSTPROCESS_SUCCESS=93
 POSTPROCESS_NONE=95
@@ -31,9 +32,9 @@ POSTPROCESS_ERROR=94
 
 unrar = os.environ.get('unrar', 'unrar')
 
-root_dir = dirname(__file__)
-test_data_dir = root_dir + '/test_data/'
-tmp_dir = root_dir + '/tmp/'
+root = dirname(__file__)
+test_data_dir = root + '/test_data/'
+tmp_dir = root + '/tmp/'
 with_password_rar = 'with_password_123.rar'
 without_password_rar = 'without_password.rar'
 
@@ -49,7 +50,7 @@ def get_python():
 
 def run_script():
 	sys.stdout.flush()
-	proc = subprocess.Popen([get_python(), root_dir + '/main.py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=os.environ.copy())
+	proc = subprocess.Popen([get_python(), root + '/main.py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=os.environ.copy())
 	out, err = proc.communicate()
 	proc.pid
 	ret_code = proc.returncode
@@ -83,6 +84,7 @@ class Tests(unittest.TestCase):
 		shutil.copyfile(test_data_dir + without_password_rar, tmp_dir + without_password_rar)
 		os.environ['NZBNA_NZBID'] = without_password_rar
 		[out, _, _] = run_script()
+		shutil.rmtree(tmp_dir)
 		self.assertTrue('Password found in' not in out)
 
 	def test_with_password(self):
@@ -91,10 +93,16 @@ class Tests(unittest.TestCase):
 		shutil.copyfile(test_data_dir + with_password_rar, tmp_dir + with_password_rar)
 		os.environ['NZBNA_NZBID'] = with_password_rar
 		[out, _, _] = run_script()
-		self.assertTrue('Password found in' in out)
-	
-	def __del__(self):
 		shutil.rmtree(tmp_dir)
+		self.assertTrue('Password found in' in out)
+
+	def test_manifest(self):
+		with open(root + '/manifest.json', encoding='utf-8') as file:
+			try:
+				json.loads(file.read())
+			except ValueError as e:
+				self.fail('manifest.json is not valid.')
+		
 
 if __name__ == '__main__':
 	unittest.main()
