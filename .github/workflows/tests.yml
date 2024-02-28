@@ -8,8 +8,9 @@ on:
 
 jobs:
   tests:
-    uses: nzbgetcom/nzbget-extensions/.github/workflows/python-tests.yml@main
+    uses: nzbgetcom/nzbget-extensions/.github/workflows/python-tests.yml@feature/update-python-tests
     with:
-      python-versions: "3.2 3.3 3.4 3.5 3.6 3.7 3.8 3.9 3.10 3.11 3.12"
+      python-versions: "3.3 3.4 3.5 3.6 3.7 3.8 3.9 3.10 3.11 3.12"
       supported-python-versions: "3.8 3.9 3.10 3.11 3.12"
-      test-script: tests.py
+      needed-packages: "unrar"
+      test-script: tests.py      
