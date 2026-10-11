@@ -33,6 +33,7 @@ import os
 import shlex
 import traceback
 from xmlrpc.client import ServerProxy
+from urllib.parse import quote
 
 # Exit codes used by NZBGet
 POSTPROCESS_SUCCESS=93
@@ -209,8 +210,7 @@ def connect_to_nzbget():
 	password = os.environ['NZBOP_CONTROLPASSWORD']
 	
 	# Build an URL for XML-RPC requests
-	# TODO: encode username and password in URL-format
-	xmlRpcUrl = 'http://%s:%s@%s:%s/xmlrpc' % (username, password, host, port)
+	xmlRpcUrl = 'http://%s:%s@%s:%s/xmlrpc' % (quote(username, safe=""), quote(password, safe=""), host, port)
 
 	# Create remote server object
 	nzbget = ServerProxy(xmlRpcUrl, verbose=check_verbose_logging())
