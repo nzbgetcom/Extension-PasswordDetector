@@ -1,0 +1,6 @@
+{
+  "about": "Oppdager NZB-er med passordbeskyttede .rar-arkiver.",
+  "description": "Hvis et passord oppdages, merkes nedlastingen som dårlig eller settes på pause. Denne statusen\ninformerer andre skript om feilen og lar NZBGet velge\nen annen duplikat for nedlasting (hvis tilgjengelig).",
+  "passaction_desc": "Handling hvis passord oppdages.\n\nPause lar deg angi passord. Når den gjenopptas, hoppes passorddeteksjon over for å la NZB fullføres.\nMark bad fjerner nedlastingen fra køen og (hvis alternativet \"DeleteCleanupDisk\" er aktivt) slettes\nde nedlastede filene fra disken. Hvis duplikathåndtering er aktivt\n(alternativet \"DupeCheck\"), velges en annen duplikat for nedlasting hvis tilgjengelig.\nStatusen \"FAILURE/BAD\" sendes til andre skript og informerer dem om feilen.",
+  "requirements": "Dette skriptet krever at Python 3.8 og nyere er installert på systemet ditt."
+}

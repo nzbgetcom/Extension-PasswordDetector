@@ -1,0 +1,6 @@
+{
+  "about": "Detecta NZBs com arquivo .rar protegido por senha.",
+  "description": "Se uma senha for detectada, o download é marcado como inválido ou pausado. Este status\ninforma outros scripts sobre a falha e permite que o NZBGet escolha\noutro duplicado para download (se disponível).",
+  "passaction_desc": "Ação se senha encontrada.\n\nPause permite definir a senha. Após retomar, a detecção de senha é ignorada para permitir que o NZB seja concluído.\nMark bad remove o download da fila e (se a opção \"DeleteCleanupDisk\" estiver ativa) os\narquivos baixados são excluídos do disco. Se o tratamento de duplicatas estiver ativo\n(opção \"DupeCheck\"), outro duplicado será escolhido para download, se disponível.\nO status \"FAILURE/BAD\" é passado para outros scripts e os informa sobre a falha.",
+  "requirements": "Este script requer Python 3.8 ou superior instalado no seu sistema."
+}

@@ -1,0 +1,6 @@
+{
+  "about": "Erkennt NZBs mit passwortgeschützten .rar-Archiven.",
+  "description": "Wenn ein Passwort erkannt wird, wird der Download als fehlerhaft markiert oder pausiert. Dieser Status\ninformiert andere Skripte über den Fehler und ermöglicht es NZBGet, ein\nanderes Duplikat zum Herunterladen auszuwählen (falls verfügbar).",
+  "passaction_desc": "Aktion, wenn ein Passwort gefunden wird.\n\nPause ermöglicht die Eingabe des Passworts. Nach dem Fortsetzen wird die Passworterkennung übersprungen, damit der NZB abgeschlossen werden kann.\nMark bad entfernt den Download aus der Warteschlange und (wenn die Option \"DeleteCleanupDisk\" aktiv ist) werden die\nheruntergeladenen Dateien von der Festplatte gelöscht. Wenn die Duplikatbehandlung aktiv ist\n(Option \"DupeCheck\"), wird ein anderes Duplikat zum Herunterladen ausgewählt, falls verfügbar.\nDer Status \"FAILURE/BAD\" wird an andere Skripte weitergegeben und informiert diese über den Fehler.",
+  "requirements": "Dieses Skript erfordert, dass Python 3.8 und höher auf Ihrem System installiert ist."
+}

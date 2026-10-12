@@ -1,0 +1,6 @@
+{
+  "about": "Registrerer nzbs med adgangskodebeskyttede .rar-arkiver.",
+  "description": "Hvis en adgangskode registreres, markeres downloaden som dårlig eller sættes på pause. Denne status\ninformerer andre scripts om fejlen og giver NZBGet mulighed for at vælge\nen anden dublet til download (hvis tilgængelig).",
+  "passaction_desc": "Handling hvis adgangskode findes.\n\nPause giver mulighed for at angive adgangskoden. Når den genoptages, springes adgangskoderegistrering over for at lade NZB fuldføre.\nMark bad fjerner downloaden fra køen og (hvis indstillingen \"DeleteCleanupDisk\" er aktiv) slettes de\ndownloadede filer fra disken. Hvis håndtering af dubletter er aktiv\n(indstillingen \"DupeCheck\"), vælges en anden dublet til download, hvis tilgængelig.\nStatussen \"FAILURE/BAD\" sendes til andre scripts og informerer dem om fejlen.",
+  "requirements": "Dette script kræver, at Python 3.8 eller nyere er installeret på dit system."
+}

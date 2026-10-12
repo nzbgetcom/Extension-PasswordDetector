@@ -1,0 +1,6 @@
+{
+  "about": "Tunnistaa nzb-tiedostot, joissa on salasanalla suojattu .rar-arkisto.",
+  "description": "Jos salasana havaitaan, lataus merkitään vialliseksi tai keskeytetään. Tämä tila\nilmoittaa muille skripteille epäonnistumisesta ja antaa NZBGet:lle mahdollisuuden valita\ntoinen kopio ladattavaksi (jos saatavilla).",
+  "passaction_desc": "Toiminto, jos salasana löytyy.\n\nPause mahdollistaa salasanan määrittämisen. Jatkamisen jälkeen salasanan tunnistus ohitetaan, jotta NZB voi valmistua.\nMark bad poistaa latauksen jonosta ja (jos asetus \"DeleteCleanupDisk\" on aktiivinen) ladatut\ntiedostot poistetaan levyltä. Jos kaksoiskappaleiden käsittely on aktiivinen\n(asetus \"DupeCheck\"), valitaan toinen kopio ladattavaksi, jos saatavilla.\nTila \"FAILURE/BAD\" välitetään muille skripteille ja ilmoittaa niille epäonnistumisesta.",
+  "requirements": "Tämä skripti vaatii Python 3.8 tai uudemman asennettuna järjestelmääsi."
+}

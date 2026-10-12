@@ -1,0 +1,6 @@
+{
+  "about": "Wykrywa pliki nzb z archiwum .rar chronionym hasłem.",
+  "description": "Jeśli hasło zostanie wykryte, pobieranie jest oznaczane jako złe lub wstrzymane. Ten status\ninformuje inne skrypty o niepowodzeniu i pozwala NZBGet wybrać\ninny duplikat do pobrania (jeśli dostępny).",
+  "passaction_desc": "Akcja po wykryciu hasła.\n\nPause pozwala zdefiniować hasło. Po wznowieniu wykrywanie hasła jest pomijane, aby umożliwić ukończenie NZB.\nMark bad usuwa pobieranie z kolejki i (jeśli opcja \"DeleteCleanupDisk\" jest aktywna) pobrane\npliki są usuwane z dysku. Jeśli obsługa duplikatów jest aktywna\n(opcja \"DupeCheck\"), inny duplikat jest wybierany do pobrania, jeśli jest dostępny.\nStatus \"FAILURE/BAD\" jest przekazywany do innych skryptów i informuje je o niepowodzeniu.",
+  "requirements": "Ten skrypt wymaga zainstalowania Python 3.8 lub nowszego w systemie."
+}
