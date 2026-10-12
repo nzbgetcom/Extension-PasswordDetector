@@ -1,0 +1,6 @@
+{
+  "about": "Detekuje NZB soubory s archivy .rar chráněnými heslem.",
+  "description": "Pokud je detekováno heslo, stahování je označeno jako chybné nebo pozastaveno. Tento stav\ninformuje ostatní skripty o selhání a umožňuje NZBGet vybrat\njiný duplikát ke stažení (pokud je k dispozici).",
+  "passaction_desc": "Akce při nalezení hesla.\n\nPause umožňuje zadat heslo. Po obnovení je detekce hesla přeskočena, aby mohl NZB dokončit stahování.\nMark bad odstraní stahování z fronty a (pokud je aktivní možnost \"DeleteCleanupDisk\") jsou\nstažené soubory odstraněny z disku. Pokud je aktivní zpracování duplikátů\n(možnost \"DupeCheck\"), je ke stažení vybrán jiný duplikát, pokud je k dispozici.\nStav \"FAILURE/BAD\" je předán ostatním skriptům a informuje je o selhání.",
+  "requirements": "Tento skript vyžaduje instalaci Python 3.8 a vyšší ve vašem systému."
+}

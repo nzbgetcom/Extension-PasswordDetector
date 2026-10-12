@@ -1,0 +1,6 @@
+{
+  "about": "Detecta NZBs con archivos .rar protegidos por contraseña.",
+  "description": "Si se detecta una contraseña, la descarga se marca como incorrecta o se pausa. Este estado\ninforma a otros scripts sobre el fallo y permite a NZBGet elegir\notra descarga duplicada (si está disponible).",
+  "passaction_desc": "Acción si se encuentra una contraseña.\n\nPause permite definir la contraseña. Una vez reanudada, la detección de contraseña se omite para permitir que el NZB se complete.\nMark bad elimina la descarga de la cola y (si la opción \"DeleteCleanupDisk\" está activa) los\narchivos descargados se eliminan del disco. Si el manejo de duplicados está activo\n(opción \"DupeCheck\"), se elige otro duplicado para descargar si está disponible.\nEl estado \"FAILURE/BAD\" se pasa a otros scripts y les informa sobre el fallo.",
+  "requirements": "Este script requiere que Python 3.8 o superior esté instalado en su sistema."
+}

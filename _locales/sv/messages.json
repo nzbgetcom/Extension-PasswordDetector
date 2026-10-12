@@ -1,0 +1,6 @@
+{
+  "about": "Identifierar nzb-filer med lösenordsskyddade .rar-arkiv.",
+  "description": "Om ett lösenord upptäcks markeras nedladdningen som felaktig eller pausas. Denna status\ninformerar andra skript om felet och gör det möjligt för NZBGet att välja\nen annan dubblett för nedladdning (om tillgänglig).",
+  "passaction_desc": "Åtgärd om lösenord hittas.\n\nPause gör det möjligt att ange lösenord. När nedladdningen återupptas hoppas lösenordsdetekteringen över för att låta NZB slutföras.\nMark bad tar bort nedladdningen från kön och (om alternativet \"DeleteCleanupDisk\" är aktivt) raderas\nde nedladdade filerna från disken. Om dubbletthantering är aktivt\n(alternativet \"DupeCheck\") väljs en annan dubblett för nedladdning om tillgänglig.\nStatusen \"FAILURE/BAD\" skickas till andra skript och informerar dem om felet.",
+  "requirements": "Det här skriptet kräver att Python 3.8 och senare är installerat på ditt system."
+}

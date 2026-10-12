@@ -1,0 +1,6 @@
+{
+  "about": "Jelszóval védett .rar archívumot tartalmazó nzb-k felismerése.",
+  "description": "Ha jelszó kerül felismerésre, a letöltés rosszként jelölve vagy szüneteltetve lesz. Ez az állapot\ntájékoztatja a többi szkriptet a hibáról, és lehetővé teszi az NZBGet számára,\nhogy másik duplikátumot válasszon letöltésre (ha elérhető).",
+  "passaction_desc": "Teendő jelszó észlelésekor.\n\nA Pause lehetővé teszi a jelszó megadását. A folytatás után a jelszófelismerés kihagyásra kerül, hogy az NZB befejezhesse a letöltést.\nA Mark Bad eltávolítja a letöltést a sorból, és (ha a \"DeleteCleanupDisk\" opció aktív) a\nletöltött fájlok törlésre kerülnek a lemezről. Ha a duplikátumkezelés aktív\n(\"DupeCheck\" opció), akkor egy másik duplikátum kerül kiválasztásra letöltésre, ha elérhető.\nA \"FAILURE/BAD\" állapot átadásra kerül a többi szkriptnek, tájékoztatva őket a hibáról.",
+  "requirements": "Ez a szkript Python 3.8 vagy újabb verziójának telepítését igényli a rendszeren."
+}

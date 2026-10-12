@@ -1,0 +1,6 @@
+{
+  "about": "Détecte les NZB avec des archives .rar protégées par mot de passe.",
+  "description": "Si un mot de passe est détecté, le téléchargement est marqué comme mauvais ou mis en pause. Ce statut\ninforme les autres scripts de l'échec et permet à NZBGet de choisir\nun autre doublon à télécharger (si disponible).",
+  "passaction_desc": "Action si un mot de passe est trouvé.\n\nPause permet de définir le mot de passe. Une fois repris, la détection du mot de passe est ignorée pour permettre au NZB de se terminer.\nMark bad supprime le téléchargement de la file d'attente et (si l'option \"DeleteCleanupDisk\" est active) les\nfichiers téléchargés sont supprimés du disque. Si la gestion des doublons est active\n(option \"DupeCheck\"), un autre doublon est choisi pour le téléchargement si disponible.\nLe statut \"FAILURE/BAD\" est transmis aux autres scripts et les informe de l'échec.",
+  "requirements": "Ce script nécessite que Python 3.8 ou supérieur soit installé sur votre système."
+}
