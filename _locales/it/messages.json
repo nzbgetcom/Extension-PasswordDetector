@@ -1,0 +1,6 @@
+{
+  "about": "Rileva gli nzb con archivi .rar protetti da password.",
+  "description": "Se viene rilevata una password, il download viene contrassegnato come non valido o messo in pausa. Questo stato\ninforma altri script dell'errore e consente a NZBGet di scegliere\nun altro duplicato da scaricare (se disponibile).",
+  "passaction_desc": "Azione da eseguire se viene trovata una password.\n\nPause consente di definire la password. Una volta ripreso, il rilevamento della password viene saltato per consentire il completamento dell'NZB.\nMark bad rimuove il download dalla coda e (se l'opzione \"DeleteCleanupDisk\" è attiva) i\nfile scaricati vengono eliminati dal disco. Se la gestione dei duplicati è attiva\n(opzione \"DupeCheck\"), viene scelto un altro duplicato da scaricare, se disponibile.\nLo stato \"FAILURE/BAD\" viene passato agli altri script e li informa dell'errore.",
+  "requirements": "Questo script richiede che Python 3.8 o versione successiva sia installato nel sistema."
+}

@@ -1,0 +1,6 @@
+{
+  "about": "Deteta nzbs com arquivo .rar protegido por palavra-passe.",
+  "description": "Se uma palavra-passe for detetada, o download é marcado como inválido ou pausado. Este estado\ninforma outros scripts sobre a falha e permite que o NZBGet escolha\noutro duplicado para download (se disponível).",
+  "passaction_desc": "Ação se palavra-passe encontrada.\n\nPause permite definir a palavra-passe. Após retomar, a deteção de palavra-passe é ignorada para permitir que o NZB seja concluído.\nMark bad remove o download da fila e (se a opção \"DeleteCleanupDisk\" estiver ativa) os\nficheiros descarregados são eliminados do disco. Se o tratamento de duplicados estiver ativo\n(opção \"DupeCheck\"), outro duplicado é escolhido para download, se disponível.\nO estado \"FAILURE/BAD\" é passado a outros scripts e informa-os sobre a falha.",
+  "requirements": "Este script requer Python 3.8 ou superior instalado no seu sistema."
+}

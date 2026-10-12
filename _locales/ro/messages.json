@@ -1,0 +1,6 @@
+{
+  "about": "Detectează fișiere nzb cu arhive .rar protejate prin parolă.",
+  "description": "Dacă o parolă este detectată, descărcarea este marcată ca defectă sau pusă în pauză. Acest statut\ninformează alte scripturi despre eșec și permite NZBGet să aleagă\nun alt duplicat pentru descărcare (dacă este disponibil).",
+  "passaction_desc": "Acțiune dacă parola este găsită.\n\nPause permite definirea parolei. Odată reluată, detectarea parolei este omisă pentru a permite finalizarea NZB-ului.\nMark bad elimină descărcarea din coadă și (dacă opțiunea \"DeleteCleanupDisk\" este activă) fișierele\ndescărcate sunt șterse de pe disc. Dacă gestionarea duplicatelor este activă\n(opțiunea \"DupeCheck\"), atunci un alt duplicat este ales pentru descărcare dacă este disponibil.\nStatutul \"FAILURE/BAD\" este transmis altor scripturi și le informează despre eșec.",
+  "requirements": "Acest script necesită instalarea Python 3.8 și versiuni superioare pe sistemul dumneavoastră."
+}

@@ -1,0 +1,6 @@
+{
+  "about": "Parola korumalı .rar arşivi içeren nzb dosyalarını tespit eder.",
+  "description": "Bir parola tespit edilirse indirme işlemi kötü olarak işaretlenir veya duraklatılır. Bu durum,\ndiğer betikleri hata hakkında bilgilendirir ve NZBGet'in indirmek için\nbaşka bir kopya seçmesine olanak tanır (varsa).",
+  "passaction_desc": "Parola bulunursa yapılacak işlem.\n\nPause, parola tanımlamaya olanak tanır. Devam ettirildiğinde, NZB'nin tamamlanmasına izin vermek için parola tespiti atlanır.\nMark Bad, indirmeyi kuyruktan kaldırır ve (\"DeleteCleanupDisk\" seçeneği etkinse)\nindirilen dosyalar diskten silinir. Yinelenen işleme etkinse\n(\"DupeCheck\" seçeneği) mevcut başka bir kopya indirilmek üzere seçilir.\n\"FAILURE/BAD\" durumu diğer betiklere iletilir ve onları hata hakkında bilgilendirir.",
+  "requirements": "Bu betik, sisteminizde Python 3.8 ve üzeri sürümünün yüklü olmasını gerektirir."
+}
