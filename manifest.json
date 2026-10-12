@@ -1,10 +1,10 @@
 {
     "main": "main.py",
     "name": "PasswordDetector",
-    "homepage": "https://github.com/nzbgetcom/Extension-Logger",
+    "homepage": "https://github.com/nzbgetcom/Extension-PasswordDetector",
     "kind": "QUEUE/POST-PROCESSING",
-    "displayName": "Password Detector",
-    "version": "3.0.0",
+    "displayName": "PasswordDetector",
+    "version": "3.1",
     "author": "JVM",
     "license": "GNU",
     "about": "Detects nzbs with password protected .rar archive.",

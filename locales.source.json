@@ -1,0 +1,18 @@
+{
+    "about": {
+        "message": "Detects nzbs with password protected .rar archive.",
+        "description": "Short description of the Password Detector extension shown in settings."
+    },
+    "description": {
+        "message": "If a password is detected the download is marked as bad or paused. This status\ninforms other scripts about failure and allows NZBGet to choose\nanother duplicate for download (if available).",
+        "description": "Full description of the extension shown in settings. DO NOT translate 'NZBGet'."
+    },
+    "requirements": {
+        "message": "This script requires Python 3.8 and above to be installed on your system.",
+        "description": "System requirements (each requirement is a separate string). DO NOT translate technical version strings (e.g., Python 3.8 and above)."
+    },
+    "passaction_desc": {
+        "message": "Action if password found.\n\nPause allows to define password. Once resumed, password detection skipped to allow NZB to complete.\nMark bad removes the download from queue and (if option \"DeleteCleanupDisk\" is active) the\ndownloaded files are deleted from disk. If duplicate handling is active\n(option \"DupeCheck\") then another duplicate is chosen for download if available.\nThe status \"FAILURE/BAD\" is passed to other scripts and informs them about failure.",
+        "description": "Help text for the PassAction option in Password Detector extension. DO NOT translate option names enclosed in quotes (e.g., \"DeleteCleanupDisk\", \"DupeCheck\"). DO NOT translate fixed values 'Pause' and 'Mark Bad', or the status 'FAILURE/BAD'."
+    }
+}
